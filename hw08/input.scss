@@ -1,0 +1,41 @@
+%fullHeight {
+    height: 100%;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+
+    #root {
+        @extend %fullHeight;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .columnClass {
+        @extend %fullHeight;
+        display: block;
+
+        #columnInner {
+            @extend %fullHeight;
+        }
+
+        &.leftColumn {
+            width: 375px;
+            background: rgb(106, 0, 220);
+            background: linear-gradient(180deg, rgba(106, 0, 220, 1) 50%, rgba(165, 1, 236, 1) 100%);
+
+            .menuItem {
+                color: #fff;
+                font-size: 1.2rem;
+                padding-bottom: 2rem;
+            }
+
+            .menuItemContainer {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+        }
+    }
+}

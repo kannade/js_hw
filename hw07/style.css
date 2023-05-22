@@ -1,0 +1,125 @@
+body {
+    background-color: #F4F5F9;
+}
+
+#header {
+    background-color: #FFF;
+    height: 150px;
+    box-shadow: 0px 3px 10px 0px rgb(218 218 218 / 30%);
+    border-bottom: 1px solid #F4F5F9;
+}
+
+#body {
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer {
+    margin-bottom: 125px;
+}
+
+#logo {
+    color: #E4902D;
+    margin-right: 130px;
+}
+
+.headerItem {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#headerInner {
+    margin-left: 125px;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menuItem {
+    color: #868B8F;
+    margin-right: 90px;
+}
+
+.menuItem.active {
+    color: #2C3436;
+    border-bottom: 3px solid #E3A65A;
+}
+
+#container {
+    margin-top: 125px;
+    display: grid;
+    /* justify-items: center; */
+    /* grid-template-rows: 575px; */
+    /* grid-template-columns: 535px 535px 1120px; */
+    gap: 60px;
+    grid-template-columns: [one] 1fr [two] 1fr [three] 1fr [four] 1fr [five] 1fr [six] 1fr [seven] 1fr [eight] 1fr [nine] 1fr [ten];
+    grid-template-rows: [row1-start] 1fr [row1-end] 1fr;
+}
+
+#container>div:nth-child(1) {
+    grid-column-start: one;
+    grid-column-end: three;
+    grid-row-start: row1-start;
+    grid-row-end: row1-start;
+}
+
+#container>div:nth-child(2) {
+    grid-column-start: three;
+    grid-column-end: five;
+    grid-row-start: row1-start;
+    grid-row-end: row1-start;
+}
+
+#container>div:nth-child(3) {
+    grid-column-start: five;
+    grid-column-end: ten;
+    grid-row-start: row1-start;
+    grid-row-end: row1-start;
+}
+
+#container>div:nth-child(4) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: row1-end;
+    grid-row-end: row1-end;
+}
+
+#container>div:nth-child(5) {
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: row1-end;
+    grid-row-end: row1-end;
+}
+
+#container>div:nth-child(6) {
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: row1-end;
+    grid-row-end: row1-end;
+}
+
+.item {
+    background-color: #FFF;
+    border-radius: 20px;
+    padding: 60px;
+}
+
+.item.grad {
+    background: linear-gradient(135deg, #363E4B, #4383ED);
+    color: #fff;
+    font-size: 62px;
+}
+
+.item.grad .small {
+    font-size: 52px;
+}
+
+.item>.header {
+    color: #252D30;
+    font-size: 28px;
+    font-weight: 700;
+}

@@ -1,0 +1,32 @@
+body .columnClass #columnInner, body .columnClass, body #root {
+  height: 100%;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+}
+body #root {
+  display: flex;
+  flex-direction: row;
+}
+body .columnClass {
+  display: block;
+}
+body .columnClass.leftColumn {
+  width: 375px;
+  background: rgb(106, 0, 220);
+  background: linear-gradient(180deg, rgb(106, 0, 220) 50%, rgb(165, 1, 236) 100%);
+}
+body .columnClass.leftColumn .menuItem {
+  color: #fff;
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+}
+body .columnClass.leftColumn .menuItemContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=output.css.map */
